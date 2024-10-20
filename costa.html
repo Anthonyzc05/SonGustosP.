@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Costa</title>
+</head>
+<body>
+    <header>
+        <h1>Platos de la Costa</h1>
+        <nav class="nav-buttons">
+            <a href="login.html" class="button">Iniciar Sesión</a>
+            <a href="crear.html" class="button">Crear Cuenta</a>
+            <a href="menu.html" class="button">Volver al Menú</a>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <h2>Categorías</h2>
+        <nav>
+            <a href="costa.html" class="sidebar-button">Costa</a>
+            <a href="sierra.html" class="sidebar-button">Sierra</a>
+            <a href="selva.html" class="sidebar-button">Selva</a>
+            <a href="extranjeros.html" class="sidebar-button">Extranjeros</a>
+        </nav>
+    </div>
+    <main>
+        <div class="imagenes">
+            <div class="imagen" onclick="showDetails(this)">
+                <img src="imagen1.jpg" alt="Descripción 1">
+                <p>Plato de la Costa 1.</p>
+            </div>
+            <div class="imagen" onclick="showDetails(this)">
+                <img src="imagen2.jpg" alt="Descripción 2">
+                <p>Plato de la Costa 2.</p>
+            </div>
+            <div class="imagen" onclick="showDetails(this)">
+                <img src="imagen3.jpg" alt="Descripción 3">
+                <p>Plato de la Costa 3.</p>
+            </div>
+        </div>
+        <div id="details" class="details" style="display:none;">
+            <img id="largeImage" src="" alt="Imagen ampliada">
+            <p id="largeImageInfo"></p>
+            <div class="buttons">
+                <button onclick="order()">Pedir</button>
+                <button onclick="notOrder()">No Pedir</button>
+            </div>
+        </div>
+    </main>
+    <script src="animacion.js"></script>
+</body>
+</html>
